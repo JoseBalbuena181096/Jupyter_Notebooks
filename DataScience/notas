@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 22 16:46:36 2018
+
+@author: jose
+"""
+#%%
+name="Jose"
+city="Atlixco"
+presentation=f"Hello, my name is {name}, I am from {city}"
+print(presentation)
+#%%Operation with strings
+title="Introduccion to Python"
+print("We convert a string to uppercase with upper")
+print(title.upper())
+print("We convert a string to lowercase with lower")
+print(title.lower())
+print("We put the first letter to uppercase with capitalize")
+#%%
+name_with_comma=",manuel,"
+print("We use strip for dalate characters at the start and end of string")
+print(name_with_comma.strip(","))
+print("We use replace for replace parts of a string by another")
+print(name_with_comma.replace("nuel","riano"))
+print("All methods can be chained")
+print(name_with_comma.strip(",").replace("riano","nuel"))
+#%%
+""""
+You can divide a string into multiples using the split method
+"""
+colors_str="red|yellow|green|blue"
+colors_list=colors_str.split("|")
+print(len(colors_list))
+print(colors_list)
+#%%
+"""
+Numbers
+"""
+print("There are two basic kinds of numerical primitives in python,\
+      int(integer) and float(decimal)")
+integer=23
+print(type(integer))
+decimal=2.33
+print(type(decimal))
+#%% We can convert numbers to string with the method str()
+integer=1
+decimal=1.5
+print(type(str(integer)))
+print("dos "+str(decimal))
+#%%
+print("You can also use number in interpolation of the strings")
+name="Jose"
+city="Atlixco"
+age=22
+print(f"My name is {name}, I'm from {city},I'm {age} years old.")
+#%%
+print("In the same way, we can convert string to integer")
+print(type(int("2")))
+#%% Number Operation
+#Add
+print("2+2= ",2+2)
+#subtraction
+print("4-9= ",4-9)
+#multiplication
+print("4*4= ",4*4)
+##Another operations that we can do 
+a=7
+b=2
+#IWhole division
+print(f"{a}//{b}= ",a//b)
+#Module
+print(f"{a}%{b}= ",a%b)
+#Negation
+print(f"- {a}= ",-a)
+#Powers
+print(f"{a}**{b}= ",a**b)
+#%%Booleans
+# A boolean variable is one that can be true or false
+true=True
+false=False
+print(type(true))
+## As special type primitive, the none variable  
+none=None
+#%% Logical Comparisons
+#We can do comparisons between vairables, the result is a bool variable 
+a=7
+b=2
+#a greater than or equal to b
+print(f"{a}>={b}",a>=b)
+#b less than  or equal to a
+print(f"{b}<={a}",b<=a)
+#b equal than to a
+print(f"{b}=={a}",b==a)
+#a is different of 23 and denied
+print(f"{a}!=23",not a!=23)
+#We can evalute variables that are met with AND
+print(f"{a}!={23} and {a}>{b}= ",a!=23 and a>b) 
+#We can use or for evalute,if one or the other is fulfilled
+print(f"{a}!=23 or {b}<={a} =",a!=23 or b<=a)
+#%%
+true=True
+print("true is True",true is True)

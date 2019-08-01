@@ -1,0 +1,2 @@
+nombre,edad,Ciudad
+Andres,34,Madrid
